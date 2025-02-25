@@ -2,6 +2,19 @@ from fontTools.ttLib import TTFont
 
 '''Generate WOFF from TTF or OTF font.'''
 
+srcPath  = './ttf/CSLRubik-Thin.ttf'
+woffPath = './web/CSLRubik-Thin.woff'
+
+with TTFont(srcPath) as font:
+    font.flavor = 'woff'
+    font.save(woffPath)
+
+srcPath  = './ttf/CSLRubik-ThinItalic.ttf'
+woffPath = './web/CSLRubik-ThinItalic.woff'
+
+with TTFont(srcPath) as font:
+    font.flavor = 'woff'
+    font.save(woffPath)
 
 srcPath  = './ttf/CSLRubik-ExtraLight.ttf'
 woffPath = './web/CSLRubik-ExtraLight.woff'
@@ -154,6 +167,19 @@ with TTFont(srcPath) as font:
 
 '''Generate WOFF2 from TTF or OTF font.'''
 
+srcPath  = './ttf/CSLRubik-Thin.ttf'
+woff2Path = './web/CSLRubik-Thin.woff2'
+
+with TTFont(srcPath) as font:
+    font.flavor = 'woff2'
+    font.save(woff2Path)
+
+srcPath  = './ttf/CSLRubik-ThinItalic.ttf'
+woff2Path = './web/CSLRubik-ThinItalic.woff2'
+
+with TTFont(srcPath) as font:
+    font.flavor = 'woff2'
+    font.save(woff2Path)
 
 srcPath  = './ttf/CSLRubik-ExtraLight.ttf'
 woff2Path = './web/CSLRubik-ExtraLight.woff2'

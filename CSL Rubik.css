@@ -2,6 +2,28 @@
 
 @font-face {
     font-family:'CSL Rubik';
+    src: url('web/CSLRubik-Thin.woff2') format('woff2'),
+		url('web/CSLRubik-Thin.woff') format('woff'),
+		url('ttf/CSLRubik-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+001D-FB04;
+}
+
+@font-face {
+    font-family:'CSL Rubik';
+    src: url('web/CSLRubik-ThinItalic.woff2') format('woff2'),
+		url('web/CSLRubik-ThinItalic.woff') format('woff'),
+		url('ttf/CSLRubik-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-stretch: normal;
+    unicode-range: U+001D-FB04;
+}
+
+@font-face {
+    font-family:'CSL Rubik';
     src: url('web/CSLRubik-ExtraLight.woff2') format('woff2'),
 		url('web/CSLRubik-ExtraLight.woff') format('woff'),
 		url('ttf/CSLRubik-ExtraLight.ttf') format('truetype');
